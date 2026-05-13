@@ -8,9 +8,9 @@ export default function Footer() {
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
           {/* Left Column */}
-          <div className="col-span-1 md:col-span-4 flex flex-col gap-6">
-            <Link href="/" className="flex items-center mb-6 -ml-4">
-              <img src="/logo.png" alt="Openhall Analytics" className="h-32 w-auto object-contain" />
+          <div className="col-span-1 md:col-span-4 flex flex-col items-center md:items-start gap-6 text-center md:text-left">
+            <Link href="/" className="flex items-center mb-2 md:mb-6 md:-ml-4">
+              <img src="/logo.png" alt="Openhall Analytics" className="h-24 md:h-32 w-auto object-contain" />
             </Link>
             
             <div className="flex gap-4 mt-2">
@@ -28,7 +28,7 @@ export default function Footer() {
           
           {/* Right Columns Grid */}
           <div className="col-span-1 md:col-span-8 border-t-[3px] border-black pt-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
               
               <div className="flex flex-col gap-4">
                 <h4 className="text-xs font-bold tracking-widest uppercase mb-2">RESEARCH & INSIGHTS</h4>

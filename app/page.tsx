@@ -47,14 +47,14 @@ export default function Home() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-white py-16 lg:py-24 border-b border-gray-200">
+        <section className="bg-white py-12 md:py-16 lg:py-24 border-b border-gray-200">
           <div className="max-w-[1400px] mx-auto px-6">
-            <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
-              <div className="w-full lg:w-5/12 flex flex-col justify-center">
-                <h1 className="text-5xl lg:text-6xl font-serif text-gray-900 mb-8 leading-tight">
+            <div className="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-24 items-center">
+              <div className="w-full lg:w-5/12 flex flex-col justify-center text-center lg:text-left">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 mb-6 md:mb-8 leading-tight">
                   Thinking Out Loud
                 </h1>
-                <p className="text-xl text-gray-700 leading-relaxed font-serif">
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-serif">
                   The Daily Observations — or what we call the wire — is how we share our thinking with clients and partners in real time. Here, we highlight the people, ideas, and processes that shape our perspective. Openhall Analytics provides training and consultation services.
                 </p>
               </div>
@@ -82,21 +82,21 @@ export default function Home() {
         </section>
 
         {/* What We Do Section */}
-        <section className="py-24 bg-[#f9f9f9]">
+        <section className="py-16 md:py-24 bg-[#f9f9f9]">
           <div className="max-w-[1000px] mx-auto px-6 text-center">
-            <h2 className="text-4xl font-serif text-gray-900 mb-8">What We Do</h2>
-            <p className="text-xl text-gray-700 leading-relaxed font-serif mb-10">
+            <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-6 md:mb-8">What We Do</h2>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-serif mb-8 md:mb-10">
               At Openhall Analytics, we help individuals and businesses make sense of financial markets through hands-on training and expert consultation. We break down complex economic ideas into practical knowledge — so our clients can make better decisions with confidence.
             </p>
           </div>
         </section>
 
-        {/* Latest from Bridgewater Section */}
-        <section className="py-20 bg-[#f9f9f9]">
+        {/* Latest from Openhall Section */}
+        <section className="py-16 md:py-20 bg-[#f9f9f9]">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 className="text-4xl font-serif text-gray-900 mb-16 text-center">Latest from Openhall</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-10 md:mb-16 text-center">Latest from Openhall</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 mb-16">
               {latestItems.map((item, index) => (
                 <LatestCard key={index} {...item} />
               ))}
