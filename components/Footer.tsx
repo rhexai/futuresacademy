@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Left Column */}
           <div className="col-span-1 md:col-span-4 flex flex-col items-center md:items-start gap-6 text-center md:text-left">
             <Link href="/" className="flex items-center mb-2 md:mb-6 md:-ml-4">
-              <img src="/logo.png" alt="Openhall Analytics" className="h-24 md:h-32 w-auto object-contain" />
+              <img src="/hattex-logo.png" alt="HATTEX" className="h-24 md:h-36 w-auto object-contain scale-110" />
             </Link>
             
             <div className="flex gap-4 mt-2">
@@ -47,7 +47,7 @@ export default function Footer() {
               </div>
 
               <div className="flex flex-col gap-4">
-                <h4 className="text-xs font-bold tracking-widest uppercase mb-2">TRAINING</h4>
+                <h4 className="text-xs font-bold tracking-widest uppercase mb-2">Events</h4>
                 <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Corporate Workshops</Link>
                 <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Executive Courses</Link>
                 <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Webinars</Link>
@@ -60,7 +60,7 @@ export default function Footer() {
 
         {/* Bottom copyright/legal bar */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200 text-xs text-gray-500">
-          <p>© 2026 Openhall Analytics</p>
+          <p>© 2026 Hatten Syndicate Global Ltd. (Hattex)</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="#" className="hover:underline">Legal Disclosures</Link>
             <Link href="#" className="hover:underline">Privacy Policy</Link>

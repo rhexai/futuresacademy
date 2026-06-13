@@ -13,7 +13,7 @@ export default function Header() {
         {/* Top bar with Logo and Auth/Action links */}
         <div className="flex justify-between items-center w-full">
           <Link href="/" className="flex items-center">
-            <img src="/logo.png" alt="Openhall Analytics" className="h-16 md:h-24 w-auto" />
+            <img src="/hattex-logo.png" alt="HATTEX" className="h-20 md:h-28 w-auto object-contain scale-110" />
           </Link>
 
           {/* Desktop Actions */}
@@ -22,11 +22,11 @@ export default function Header() {
               <Mail className="w-4 h-4" />
               NEWSLETTER
             </Link>
-            <Link href="#" className="bg-[#8b2323] text-white px-4 py-2 rounded-sm hover:bg-[#6b1b1b] transition-colors">
+            <Link href="#" className="bg-[#5A75F9] text-white px-4 py-2 rounded-sm hover:bg-[#4558cc] transition-colors">
               SDG 8
             </Link>
             <Link href="#" className="bg-black text-white px-4 py-2 rounded-sm hover:bg-gray-800 transition-colors">
-              SUPPORT
+              Dealroom
             </Link>
           </div>
 
@@ -47,11 +47,11 @@ export default function Header() {
               <Mail className="w-4 h-4" />
               NEWSLETTER
             </Link>
-            <Link href="#" className="bg-[#8b2323] text-white py-3 rounded-sm text-center hover:bg-[#6b1b1b] transition-colors">
+            <Link href="#" className="bg-[#5A75F9] text-white py-3 rounded-sm text-center hover:bg-[#4558cc] transition-colors">
               SDG 8
             </Link>
             <Link href="#" className="bg-black text-white py-3 rounded-sm text-center hover:bg-gray-800 transition-colors">
-              SUPPORT
+              Dealroom
             </Link>
           </div>
         )}
@@ -60,7 +60,7 @@ export default function Header() {
         <nav className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-8 text-[11px] md:text-xs font-extrabold tracking-widest text-black uppercase">
           <Link href="#" className="hover:text-gray-600 transition-colors">RESEARCH & INSIGHTS</Link>
           <Link href="#" className="hover:text-gray-600 transition-colors">CONSULTATION</Link>
-          <Link href="#" className="hover:text-gray-600 transition-colors">TRAINING</Link>
+          <Link href="#" className="hover:text-gray-600 transition-colors">Events</Link>
         </nav>
       </div>
     </header>
