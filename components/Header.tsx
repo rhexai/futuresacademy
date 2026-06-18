@@ -13,20 +13,20 @@ export default function Header() {
         {/* Top bar with Logo and Auth/Action links */}
         <div className="flex justify-between items-center w-full">
           <Link href="/" className="flex items-center">
-            <img src="/hattex-logo.png" alt="HATTEX" className="h-20 md:h-28 w-auto object-contain scale-110" />
+            <img src="/futures-logo-v2.png" alt="Futures Academy" className="h-14 md:h-20 w-auto object-contain" />
           </Link>
 
           {/* Desktop Actions */}
           <div className="hidden md:flex flex-wrap justify-end items-center gap-4 text-xs font-bold tracking-widest uppercase">
-            <Link href="#" className="flex items-center gap-2 hover:text-gray-600 transition-colors">
+            <Link href="/newsletter" className="flex items-center gap-2 hover:text-gray-600 transition-colors">
               <Mail className="w-4 h-4" />
               NEWSLETTER
             </Link>
-            <Link href="#" className="bg-[#5A75F9] text-white px-4 py-2 rounded-sm hover:bg-[#4558cc] transition-colors">
+            <a href="https://sdgs.un.org/goals/goal8" target="_blank" rel="noopener noreferrer" className="bg-[#5A75F9] text-white px-4 py-2 rounded-sm hover:bg-[#4558cc] transition-colors">
               SDG 8
-            </Link>
-            <Link href="#" className="bg-black text-white px-4 py-2 rounded-sm hover:bg-gray-800 transition-colors">
-              Dealroom
+            </a>
+            <Link href="/lessons" className="bg-black text-white px-4 py-2 rounded-sm hover:bg-gray-800 transition-colors">
+              ENROLL
             </Link>
           </div>
 
@@ -43,24 +43,24 @@ export default function Header() {
         {/* Mobile Actions Dropdown */}
         {isMenuOpen && (
           <div className="md:hidden flex flex-col gap-4 pt-2 pb-4 text-xs font-bold tracking-widest uppercase border-t border-gray-100 animate-in slide-in-from-top-2">
-            <Link href="#" className="flex items-center justify-center gap-2 py-3 bg-gray-50 hover:bg-gray-100 rounded-sm transition-colors">
+            <Link href="/newsletter" className="flex items-center justify-center gap-2 py-3 bg-gray-50 hover:bg-gray-100 rounded-sm transition-colors">
               <Mail className="w-4 h-4" />
               NEWSLETTER
             </Link>
-            <Link href="#" className="bg-[#5A75F9] text-white py-3 rounded-sm text-center hover:bg-[#4558cc] transition-colors">
+            <a href="https://sdgs.un.org/goals/goal8" target="_blank" rel="noopener noreferrer" className="bg-[#5A75F9] text-white py-3 rounded-sm text-center hover:bg-[#4558cc] transition-colors">
               SDG 8
-            </Link>
-            <Link href="#" className="bg-black text-white py-3 rounded-sm text-center hover:bg-gray-800 transition-colors">
-              Dealroom
+            </a>
+            <Link href="/lessons" className="bg-black text-white py-3 rounded-sm text-center hover:bg-gray-800 transition-colors">
+              ENROLL
             </Link>
           </div>
         )}
 
         {/* Main Navigation */}
         <nav className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-8 text-[11px] md:text-xs font-extrabold tracking-widest text-black uppercase">
-          <Link href="#" className="hover:text-gray-600 transition-colors">RESEARCH & INSIGHTS</Link>
-          <Link href="#" className="hover:text-gray-600 transition-colors">CONSULTATION</Link>
-          <Link href="#" className="hover:text-gray-600 transition-colors">Events</Link>
+          <Link href="/lessons" className="hover:text-gray-600 transition-colors">LESSONS & TUTORIALS</Link>
+          <Link href="/private-tuition" className="hover:text-gray-600 transition-colors">PRIVATE TUITION</Link>
+          <Link href="/events" className="hover:text-gray-600 transition-colors">EVENTS</Link>
         </nav>
       </div>
     </header>

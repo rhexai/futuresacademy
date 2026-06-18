@@ -6,38 +6,38 @@ import LatestCard from '@/components/LatestCard';
 export default function Home() {
   const latestItems = [
     {
-      tag: 'MARKETS',
-      title: 'OpenSea official website shows a service outage',
+      tag: 'AI',
+      title: 'AI Agent Programming & Automation',
       date: '2026/05/08',
-      excerpt: 'Foresight News reports that, according to the official website, due to an ongoing system malfunction, OpenSea is currently experiencing a service outage.',
+      excerpt: 'This lesson trains kids and teens on the basics of AI agents, how they work, and how they can be used in real-life applications like task automation and simple problem-solving.',
       tagColor: 'blue' as const,
-      imageUrl: '/images-3.png',
+      imageUrl: '/ai-class.jpg',
       isVideo: false,
     },
     {
-      tag: 'IN THE NEWS',
-      title: 'AI Chipmaker Cerebras to Guide IPO Pricing Above Range',
+      tag: 'BUSINESS',
+      title: 'Startup Building',
       date: '2026/05/13',
-      excerpt: 'Cerebras Systems Inc. is guiding prospective investors that it expects to price its initial public offering above the top of its marketed range.',
+      excerpt: 'This lesson guides kids and teens on how to identify problems, develop simple solutions, and turn ideas into basic business concepts. Parents and learners should expect practical, step-by-step lessons that build creativity, problem-solving skills, and an entrepreneurial mindset to help them understand how startups are built and grown.',
       tagColor: 'black' as const,
-      imageUrl: '/Cerebras-1024x576.jpg',
+      imageUrl: '/startup-class.png',
       isVideo: false,
     },
     {
-      tag: 'IN THE NEWS',
-      title: 'Dangote plans refinery stock market debut in deal that could raise $5bn',
+      tag: 'CUSTOMER ACQUISITION',
+      title: 'Sales & Marketing',
       date: '2026/05/13',
-      excerpt: 'Aliko Dangote is targeting a $50 billion valuation for Dangote Petroleum Refinery ahead of a planned Nigerian IPO that could raise about $5 billion.',
+      excerpt: 'Futures Academy teaches kids and teens the basics of selling, digital marketing, social media marketing, paid ads, and cold outreach, helping them understand how real businesses reach and convert customers.',
       tagColor: 'black' as const,
-      imageUrl: '/dangote-refinery-crude-oil-shipment-.jpg',
+      imageUrl: '/sales-class-v2.jpg',
     },
     {
-      tag: 'MARKETS',
-      title: 'Stock Market Under the Trump Administration: What is Driving Markets in 2026?',
+      tag: 'CREATIVE DESIGN',
+      title: 'Creative Design',
       date: '2026/05/13',
-      excerpt: 'See how tariffs, tax cuts, oil prices, and earnings are shaping the stock market under Trump in 2026 and what investors should watch next.',
+      excerpt: 'Futures Academy teaches kids and teens videography, video editing, graphic design, UI/UX design, and basic tech tools used in modern creative work.',
       tagColor: 'blue' as const,
-      imageUrl: '/trump-powell-gty-jt-250716_1752692797545_hpMain_4x3.jpg.avif',
+      imageUrl: '/design-class.png',
     }
   ];
 
@@ -52,11 +52,13 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-24 items-center">
               <div className="w-full lg:w-5/12 flex flex-col justify-center text-center lg:text-left">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 mb-6 md:mb-8 leading-tight">
-                  Thinking Out Loud
+                  Futures Academy
                 </h1>
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-serif">
-                  The Daily Observations — or what we call the wire — is how we share our thinking with clients and partners in real time. Here, we highlight the people, ideas, and processes that shape our perspective. Hattex provides deal sourcing and management services.
-                </p>
+                <div className="text-lg md:text-xl text-gray-700 leading-relaxed font-serif space-y-4">
+                  <p>At Futures Academy, we prepare kids and teens for the future by teaching them real-world, high-value skills that go beyond the classroom.</p>
+                  <p>Our goal is simple — to help young learners think like creators, builders, and entrepreneurs before their peak ages.</p>
+                  <p>Through hands-on projects and guided training, students learn how to solve problems, build digital products, create content, understand technology, and develop the confidence to launch ideas of their own.</p>
+                </div>
               </div>
               
               <div className="w-full lg:w-7/12 relative group overflow-hidden cursor-pointer">
@@ -85,16 +87,21 @@ export default function Home() {
         <section className="py-16 md:py-24 bg-[#f9f9f9]">
           <div className="max-w-[1000px] mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-6 md:mb-8">What We Do</h2>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-serif mb-8 md:mb-10">
-              At Hattex, we help our partners access diverse asset options. We analyse and break down complex investments into simple data — so our clients can make better decisions with confidence.
-            </p>
+            <div className="text-lg md:text-xl text-gray-700 leading-relaxed font-serif space-y-6 mb-8 md:mb-10">
+              <p>
+                At Futures Academy, we teach kids and teens practical skills for the future. Our goal is to prepare young people with skills that help them create opportunities, not just look for them.
+              </p>
+              <p>
+                We train them in areas like Sales, AI Agent Programming & Automation, Marketing, Videography & Video Editing, Programming, AI Research, and Startup Building. Through simple, hands-on learning, we help them build real projects, think creatively, and gain confidence using modern tools and technology.
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* Latest from Openhall Section */}
+        {/* Lessons at Futures Academy Section */}
         <section className="py-16 md:py-20 bg-[#f9f9f9]">
           <div className="max-w-[1400px] mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-10 md:mb-16 text-center">Latest from Hattex</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-10 md:mb-16 text-center">Lessons at Futures Academy</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 mb-16">
               {latestItems.map((item, index) => (

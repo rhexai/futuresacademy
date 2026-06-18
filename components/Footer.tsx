@@ -9,8 +9,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
           {/* Left Column */}
           <div className="col-span-1 md:col-span-4 flex flex-col items-center md:items-start gap-6 text-center md:text-left">
-            <Link href="/" className="flex items-center mb-2 md:mb-6 md:-ml-4">
-              <img src="/hattex-logo.png" alt="HATTEX" className="h-24 md:h-36 w-auto object-contain scale-110" />
+            <Link href="/" className="flex flex-col items-center md:items-start gap-2 mb-2 md:mb-6">
+              <img src="/futures-logo-v2.png" alt="Futures Academy" className="h-10 md:h-12 w-auto object-contain mb-2" />
+              <span className="text-sm md:text-base text-gray-600 font-medium">Learn Future Skills. Build Real-World Confidence.</span>
             </Link>
             
             <div className="flex gap-4 mt-2">
@@ -28,30 +29,40 @@ export default function Footer() {
           
           {/* Right Columns Grid */}
           <div className="col-span-1 md:col-span-8 border-t-[3px] border-black pt-8">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               
               <div className="flex flex-col gap-4">
-                <h4 className="text-xs font-bold tracking-widest uppercase mb-2">RESEARCH & INSIGHTS</h4>
-                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Market Analysis</Link>
-                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Economic Reports</Link>
-                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Whitepapers</Link>
-                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Newsletter Archive</Link>
+                <h4 className="text-xs font-bold tracking-widest uppercase mb-2">PROGRAMS</h4>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">AI Agent Programming & Automation</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Sales & Marketing</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Startup Building</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Creative Design (Videography, Video Editing, UI/UX, Graphics)</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Programming & Technology</Link>
               </div>
 
               <div className="flex flex-col gap-4">
-                <h4 className="text-xs font-bold tracking-widest uppercase mb-2">CONSULTATION</h4>
-                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Strategy Advisory</Link>
-                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Portfolio Review</Link>
-                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Risk Management</Link>
-                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Book a Session</Link>
+                <h4 className="text-xs font-bold tracking-widest uppercase mb-2">LEARNING PATHWAYS</h4>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Kids Programs</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Teens Programs</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Beginner to Advanced Tracks</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Project-Based Learning</Link>
               </div>
 
               <div className="flex flex-col gap-4">
-                <h4 className="text-xs font-bold tracking-widest uppercase mb-2">Events</h4>
-                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Corporate Workshops</Link>
-                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Executive Courses</Link>
-                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Webinars</Link>
-                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Certification</Link>
+                <h4 className="text-xs font-bold tracking-widest uppercase mb-2">SUPPORT & ENROLLMENT</h4>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Admissions & Enrollment</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Talk to an Advisor</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Parent Guide</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Student Progress Support</Link>
+              </div>
+
+              <div className="flex flex-col gap-4">
+                <h4 className="text-xs font-bold tracking-widest uppercase mb-2">COMMUNITY & EVENTS</h4>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Workshops</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Bootcamps</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Hackathons</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Showcase Days</Link>
+                <Link href="#" className="text-sm text-gray-600 hover:text-black hover:underline underline-offset-4">Certification Programs</Link>
               </div>
 
             </div>
@@ -60,7 +71,7 @@ export default function Footer() {
 
         {/* Bottom copyright/legal bar */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200 text-xs text-gray-500">
-          <p>© 2026 Hatten Syndicate Global Ltd. (Hattex)</p>
+          <p>© 2026 Futures Africa. (Gablecorp)</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="#" className="hover:underline">Legal Disclosures</Link>
             <Link href="#" className="hover:underline">Privacy Policy</Link>
