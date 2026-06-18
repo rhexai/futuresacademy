@@ -13,7 +13,7 @@ export default function PrivateTuitionPage() {
     "One-on-one personalized learning experience",
     "Flexible scheduling to fit your child's routine",
     "Customized curriculum based on learning speed",
-    "Direct feedback and dedicated mentorship"
+    "Direct feedback and dedicated tutoring"
   ];
 
   return (
