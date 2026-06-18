@@ -72,7 +72,7 @@ export default function PrivateTuitionPage() {
             <div className="relative p-10 flex items-end justify-center min-h-[400px] h-full">
               <div className="text-center text-white space-y-2 w-full pb-4">
                 <h3 className="text-3xl font-serif font-bold drop-shadow-md">1-on-1</h3>
-                <p className="text-white/90 font-medium tracking-wide drop-shadow-sm">Personalized Mentorship</p>
+                <p className="text-white/90 font-medium tracking-wide drop-shadow-sm">Personalized Tutoring</p>
               </div>
             </div>
           </div>
