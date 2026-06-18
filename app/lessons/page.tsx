@@ -12,7 +12,9 @@ import {
   Video, 
   Award
 } from 'lucide-react';
-import { usePaystackPayment } from 'react-paystack';
+import dynamic from 'next/dynamic';
+
+const PaymentButton = dynamic(() => import('@/components/PaymentButton'), { ssr: false });
 
 const YoutubeIcon = ({ className }: { className?: string }) => (
   <svg 
@@ -41,27 +43,10 @@ export default function LessonsPage() {
   });
 
   const paystackAmount = billingPeriod === 'monthly' ? 22494 : 24000; // 22494 pesewas = 224.94 GHS
-  const paystackConfig = {
-    reference: `FA_${(new Date()).getTime()}`,
-    email: formData.email || 'customer@example.com',
-    amount: paystackAmount,
-    publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY || 'pk_test_87b4fb2bd3c8c93db85af8dad85bbbfa0d94d869',
-    currency: 'GHS',
-  };
-
-  const initializePayment = usePaystackPayment(paystackConfig);
 
   const onSuccess = () => {
     resetForm();
     alert("Payment successful! Thank you for enrolling.");
-  };
-
-  const onClose = () => {
-    console.log('Payment modal closed');
-  };
-
-  const handlePayment = () => {
-    initializePayment({ onSuccess, onClose } as any);
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -382,12 +367,11 @@ export default function LessonsPage() {
                 <p className="text-gray-600 text-sm leading-relaxed mb-6 max-w-sm">
                   Thank you, <strong>{formData.parentName}</strong>! We have received your request to enroll your child in our <strong>{formData.track}</strong> track. An advisor will reach out to <strong>{formData.email}</strong> shortly with details and next steps. Please click the button below to proceed to payment and complete your subscription.
                 </p>
-                <button 
-                  onClick={handlePayment}
-                  className="bg-black hover:bg-gray-800 text-white py-3.5 px-8 rounded-xl font-bold text-sm tracking-widest uppercase transition-all"
-                >
-                  Proceed to Subscribe
-                </button>
+                <PaymentButton 
+                  email={formData.email}
+                  amount={paystackAmount}
+                  onSuccess={onSuccess}
+                />
               </div>
             )}
 
