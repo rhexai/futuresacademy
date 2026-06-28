@@ -42,7 +42,7 @@ export default function LessonsPage() {
     track: 'AI Agent Programming & Automation'
   });
 
-  const paystackAmount = billingPeriod === 'monthly' ? 22494 : 24000; // 22494 pesewas = 224.94 GHS
+  const paystackAmount = billingPeriod === 'monthly' ? 44120 : 24000; // 44120 pesewas = 441.20 GHS
 
   const onSuccess = () => {
     resetForm();
@@ -158,7 +158,7 @@ export default function LessonsPage() {
                 <div className="pt-6 border-t border-gray-100 mt-auto">
                   <div className="flex justify-between items-center mb-6">
                     <div>
-                      <span className="text-2xl font-bold text-gray-900 font-serif">GH₵ 224.94</span>
+                      <span className="text-2xl font-bold text-gray-900 font-serif">GH₵ 441.20</span>
                       <span className="text-xs text-gray-500 font-medium"> / month</span>
                     </div>
                     <span className="text-xs font-bold text-[#5A75F9] tracking-wider uppercase bg-[#5A75F9]/10 px-3 py-1 rounded-full">
@@ -245,7 +245,7 @@ export default function LessonsPage() {
                     onClick={() => setBillingPeriod('monthly')}
                     className={`flex-1 py-2.5 rounded-lg text-xs font-bold transition-all uppercase tracking-wider ${billingPeriod === 'monthly' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}
                   >
-                    Monthly (GH₵ 224.94)
+                    Monthly (GH₵ 441.20)
                   </button>
                   <button 
                     type="button"
